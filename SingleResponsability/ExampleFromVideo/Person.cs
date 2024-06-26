@@ -1,17 +1,7 @@
 namespace ExampleFromVideo;
 
-public class Person
+public class Person(string firstName, string lastName)
 {
-    public Person()
-    {
-    }
-
-    public Person(string? firstName, string? lastName)
-    {
-        FirstName = firstName;
-        LastName = lastName;
-    }
-
-    public string? FirstName { get; set; }
-    public string? LastName { get; set; }
+    public string FirstName { get; set; } = firstName;
+    public string LastName { get; set; } = lastName;
 }

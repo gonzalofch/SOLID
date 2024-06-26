@@ -8,29 +8,15 @@ class Program
     {
         StandardMessages.Welcome();
 
-        Person user = PersonDataCatcher.Obtain();   
-        
-//Checks to be sure the first and last names are valid
-        if (string.IsNullOrWhiteSpace(user.FirstName))
+        Person user = PersonDataCatcher.Obtain();
+
+        if (!PersonValidator.Validate(user))
         {
-            StandardMessages.Error("first name");
-            Console.ReadLine();
+            Operations.ExitProgram();
             return;
         }
 
-        if (string.IsNullOrWhiteSpace(user.LastName))
-        {
-            StandardMessages.Error("last name");
-            Console.ReadLine();
-            return;
-        }
-
-//Create a username for the person
-        Console.WriteLine(new StringBuilder().Append("Your username is ")
-            .Append(user.FirstName.Substring(0, 1))
-            .Append(user.LastName)
-            .ToString());
-        
+        Console.WriteLine(UserNameGenerator.Generate(user));
         Operations.ExitProgram();
     }
 }
