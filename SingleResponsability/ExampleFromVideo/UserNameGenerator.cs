@@ -4,12 +4,11 @@ namespace ExampleFromVideo;
 
 public class UserNameGenerator
 {
-    public static string Generate(Person user)
+    public static void Generate(Person user)
     {
-        var userName =new StringBuilder().Append("Your username is ")
+        var userName = new StringBuilder("Your username is ")
             .Append(user.FirstName[..1])
-            .Append(user.LastName)
-            .ToString();
-        return userName;
+            .Append(user.LastName);
+        Console.WriteLine(userName.ToString());
     }
 }
