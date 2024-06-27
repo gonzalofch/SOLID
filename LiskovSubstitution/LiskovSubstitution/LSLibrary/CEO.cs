@@ -1,16 +1,11 @@
 ﻿namespace LSLibrary;
 
-public class CEO : Employee
+public class CEO : BaseEmployee, IManager
 {
     public override void CalculatePerHourRate(int rank)
     {
         decimal baseAmount = 150M;
         Salary = baseAmount * rank;
-    }
-
-    public override void AssignManager(Employee manager)
-    {
-        throw new InvalidOperationException("The CEO has no manager.");
     }
 
     public void GeneratePerformanceReview()

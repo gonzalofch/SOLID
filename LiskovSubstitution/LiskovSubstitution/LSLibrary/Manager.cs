@@ -1,6 +1,6 @@
 ﻿namespace LSLibrary;
 
-public class Manager : Employee
+public class Manager : Employee, IManager
 {
     public override void CalculatePerHourRate(int rank)
     {
@@ -10,6 +10,6 @@ public class Manager : Employee
 
     public void GeneratePerformanceReview()
     {
-        Console.WriteLine("I'm reviewing a direct report's performance.");
+        Console.WriteLine("I'm reviewing a direct report's performance");
     }
 }

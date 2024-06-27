@@ -25,15 +25,15 @@ class Program
          * CEO sera un Empleado Base + IManager (de esta manera evitamos funcionalidad que esta solamente para los IManaged)
          */
 
-        Manager accountingVp = new Manager();
+        IManager accountingVp = new CEO();
         accountingVp.FirstName = "Emma";
         accountingVp.LastName = "Stone";
         accountingVp.CalculatePerHourRate(4);
  
-        Employee emp = new CEO();
+        BaseEmployee emp = new CEO();
         emp.FirstName = "TIm";
         emp.LastName = "Corey";
-        emp.AssignManager(accountingVp);
+        // emp.AssignManager(accountingVp);
         emp.CalculatePerHourRate(2);
 
         Console.WriteLine(new StringBuilder(emp.FirstName)
