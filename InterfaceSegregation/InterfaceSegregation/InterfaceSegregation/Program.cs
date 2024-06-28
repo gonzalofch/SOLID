@@ -1,4 +1,6 @@
-﻿namespace InterfaceSegregation;
+﻿using ISLibrary;
+using ISLibrary.Interfaces;
+namespace InterfaceSegregation;
 
 class Program
 {
@@ -23,6 +25,17 @@ class Program
          Y crear interfaces para los distintos tipos de items que implementen
          estas piezas de caracteristicas segun sea necesario, asi evitamos 
          que las clases se llenen de propiedades innecesarias*/
+        
+        //estas tres instancias tienen todoo lo que necesitan 
+        IBorrowableBook book = new Book();
+        IBorrowableAudioBooks audioBook = new AudioBook();
+        IBorrowableDVD dvd = new DVD();
+        
+        //estas instancias serían como las de arriba pero sin la capacidad de ser rentadas
+        IBook noBorrowableBook = new Book();
+        IAudioBook noBorrowableAudioBook = new AudioBook();
+        IDVD noBorrowableDVD = new DVD();
+        
         Console.WriteLine("Hello, World!");
     }
 }

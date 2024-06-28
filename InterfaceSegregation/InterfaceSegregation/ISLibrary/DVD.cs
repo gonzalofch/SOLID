@@ -1,12 +1,11 @@
 ﻿using ISLibrary.Interfaces;
+
 namespace ISLibrary;
 
-public class DVD : ILibraryItem
+public class DVD : IBorrowableDVD
 {
     public string LibraryId { get; set; }
     public string Title { get; set; }
-    public string Autor { get; set; } = "";
-    public int Pages { get; set; }
     public int CheckOutDurationInDays { get; set; } = 14;
     public string Borrower { get; set; }
     public DateTime BorrowDate { get; set; }
