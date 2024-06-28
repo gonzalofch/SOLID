@@ -1,4 +1,6 @@
-﻿namespace ISLibrary;
+﻿using ISLibrary.Interfaces;
+
+namespace ISLibrary;
 
 public class ReferenceBook : ILibraryItem
 {
