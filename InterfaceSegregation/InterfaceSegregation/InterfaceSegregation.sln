@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceSegregation", "InterfaceSegregation\InterfaceSegregation.csproj", "{896A6AB8-B2D2-4997-9D15-204C38EBBD99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISLibrary", "ISLibrary\ISLibrary.csproj", "{F008C0AF-20FE-44D0-BCE2-4646A6A38720}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{896A6AB8-B2D2-4997-9D15-204C38EBBD99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896A6AB8-B2D2-4997-9D15-204C38EBBD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896A6AB8-B2D2-4997-9D15-204C38EBBD99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896A6AB8-B2D2-4997-9D15-204C38EBBD99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F008C0AF-20FE-44D0-BCE2-4646A6A38720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F008C0AF-20FE-44D0-BCE2-4646A6A38720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F008C0AF-20FE-44D0-BCE2-4646A6A38720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F008C0AF-20FE-44D0-BCE2-4646A6A38720}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
