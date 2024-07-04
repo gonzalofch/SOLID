@@ -11,7 +11,7 @@ public static class Factory
 
     public static IChore CreateChore()
     {
-        return new Chore();
+        return new Chore(CreateLogger(),CreateEmailer());
     }
 
     public static ILogger CreateLogger()
