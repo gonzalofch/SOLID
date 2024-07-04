@@ -31,7 +31,7 @@ class Program
             EmailAddress = "tim@iamtimcorey.com",
             PhoneNumber = "555-1212"
         };
-        Chore chore = new Chore()
+        IChore chore = new Chore()
         {
             ChoreName = "Take out the trash",
             Owner = owner

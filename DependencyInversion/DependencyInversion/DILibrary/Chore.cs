@@ -1,6 +1,6 @@
 ﻿namespace DILibrary;
 
-public class Chore
+public class Chore : IChore
 {
     public string ChoreName { get; set; }
     public IPerson Owner { get; set; }
