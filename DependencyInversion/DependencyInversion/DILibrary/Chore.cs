@@ -3,7 +3,7 @@
 public class Chore
 {
     public string ChoreName { get; set; }
-    public Person Owner { get; set; }
+    public IPerson Owner { get; set; }
     public double HoursWorked { get; private set; }
     public bool IsComplete { get; private set; }
 
