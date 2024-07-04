@@ -19,6 +19,6 @@ public class Chore : IChore
         IsComplete = true;
         Logger log = new Logger();
         Emailer emailer = new Emailer();
-        emailer.SendEmail(Owner, $"The chore {ChoreName} is complete");
+        emailer.SendMessage(Owner, $"The chore {ChoreName} is complete");
     }
 }
